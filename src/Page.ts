@@ -17,9 +17,7 @@ export class Page<T extends Lightning.Component.Constructor = Lightning.Componen
   extends Lightning.Component<IPageTemplateSpec<T>, IPageTypeConfig>
   implements Lightning.Component.ImplementTemplateSpec<IPageTemplateSpec<T>>
 {
-  static override _template(): Lightning.Component.Template<
-    IPageTemplateSpec<Lightning.Component.Constructor>
-  > {
+  static override _template(): Lightning.Component.Template<IPageTemplateSpec> {
     return {
       w: (w: number) => w,
       h: (h: number) => h,
